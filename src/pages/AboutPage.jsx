@@ -24,8 +24,12 @@ const AboutPage = () => {
             {/* Owner Info */}
             <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/30">
               <div className="text-center mb-8">
-                <div className="w-32 h-32 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
-                  RY
+                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-indigo-600 shadow-xl">
+                  <img 
+                    src="/images/profilepic.jpeg" 
+                    alt="Ravi Yadav" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">Ravi Yadav</h2>
                 <p className="text-indigo-600 font-semibold text-lg">Owner & Master Craftsman</p>
