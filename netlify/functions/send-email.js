@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
 
   const msg = {
     to: 'info@arvienterprises.co.in',
-    from: 'noreply@arvienterprises.co.in',
+    from: 'info@arvienterprises.co.in',
     subject: `New Inquiry from ${name}`,
     html: `
       <h2>New Contact Form Submission</h2>
@@ -32,6 +32,7 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ success: true })
     }
   } catch (error) {
+    console.error('SendGrid Error:', error)
     return {
       statusCode: 500,
       body: JSON.stringify({ success: false, error: error.message })
