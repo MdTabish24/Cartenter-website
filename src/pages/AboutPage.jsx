@@ -20,27 +20,27 @@ const AboutPage = () => {
           </div>
 
           {/* Main Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
             {/* Owner Info */}
-            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/30">
-              <div className="text-center mb-8">
-                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-indigo-600 shadow-xl">
+            <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-6 lg:p-8 shadow-xl border border-white/30">
+              <div className="text-center mb-6 lg:mb-8">
+                <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 lg:mb-6 overflow-hidden border-4 border-indigo-600 shadow-xl">
                   <img 
                     src="/images/profilepic.jpeg" 
                     alt="Ravi Yadav" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-2">Ravi Yadav</h2>
-                <p className="text-indigo-600 font-semibold text-lg">Owner & Master Craftsman</p>
+                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Ravi Yadav</h2>
+                <p className="text-indigo-600 font-semibold text-base lg:text-lg">Owner & Master Craftsman</p>
               </div>
               
-              <div className="space-y-4 text-gray-700">
-                <p className="text-center text-lg leading-relaxed">
+              <div className="space-y-3 lg:space-y-4 text-gray-700">
+                <p className="text-center text-sm lg:text-lg leading-relaxed">
                   With over <span className="font-bold text-indigo-600">15+ years of experience</span> in interior design and carpentry, 
                   Ravi Yadav has established Arvi Enterprises as a trusted name in the industry.
                 </p>
-                <p className="text-center">
+                <p className="text-center text-sm lg:text-base">
                   His expertise spans across residential and commercial projects, delivering exceptional 
                   craftsmanship and innovative design solutions.
                 </p>
@@ -48,53 +48,53 @@ const AboutPage = () => {
             </div>
 
             {/* Company Info */}
-            <div className="space-y-8">
-              <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/30">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Our Expertise</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-3xl mb-2">🏠</div>
-                    <p className="font-semibold text-gray-800">Interior Design</p>
+            <div className="space-y-6 lg:space-y-8">
+              <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-6 lg:p-8 shadow-xl border border-white/30">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 lg:mb-6 text-center">Our Expertise</h3>
+                <div className="grid grid-cols-2 gap-3 lg:gap-4">
+                  <div className="text-center p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-2xl lg:text-3xl mb-1 lg:mb-2">🏠</div>
+                    <p className="font-semibold text-gray-800 text-xs lg:text-sm">Interior Design</p>
                   </div>
-                  <div className="text-center p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-3xl mb-2">🔨</div>
-                    <p className="font-semibold text-gray-800">Carpentry Work</p>
+                  <div className="text-center p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-2xl lg:text-3xl mb-1 lg:mb-2">🔨</div>
+                    <p className="font-semibold text-gray-800 text-xs lg:text-sm">Carpentry Work</p>
                   </div>
-                  <div className="text-center p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-3xl mb-2">🪑</div>
-                    <p className="font-semibold text-gray-800">Custom Furniture</p>
+                  <div className="text-center p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-2xl lg:text-3xl mb-1 lg:mb-2">🪑</div>
+                    <p className="font-semibold text-gray-800 text-xs lg:text-sm">Custom Furniture</p>
                   </div>
-                  <div className="text-center p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-3xl mb-2">🎨</div>
-                    <p className="font-semibold text-gray-800">Design Solutions</p>
+                  <div className="text-center p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-2xl lg:text-3xl mb-1 lg:mb-2">🎨</div>
+                    <p className="font-semibold text-gray-800 text-xs lg:text-sm">Design Solutions</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/30">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-2xl">📍</div>
+              <div className="bg-white/60 backdrop-blur-xl rounded-3xl p-6 lg:p-8 shadow-xl border border-white/30">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 lg:mb-6 text-center">Contact Information</h3>
+                <div className="space-y-3 lg:space-y-4">
+                  <div className="flex items-start gap-3 lg:gap-4 p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-xl lg:text-2xl mt-1">📍</div>
                     <div>
-                      <p className="font-semibold text-gray-800">Address</p>
-                      <p className="text-gray-600 text-sm">Siveneri Hill Colony, Old Pipeline, IIT Market, Powai, Mumbai - 400076</p>
+                      <p className="font-semibold text-gray-800 text-sm lg:text-base">Address</p>
+                      <p className="text-gray-600 text-xs lg:text-sm">Siveneri Hill Colony, Old Pipeline, IIT Market, Powai, Mumbai - 400076</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-2xl">📞</div>
+                  <div className="flex items-start gap-3 lg:gap-4 p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-xl lg:text-2xl mt-1">📞</div>
                     <div>
-                      <p className="font-semibold text-gray-800">Phone & WhatsApp</p>
-                      <p className="text-gray-600">+91 9004129180</p>
+                      <p className="font-semibold text-gray-800 text-sm lg:text-base">Phone & WhatsApp</p>
+                      <p className="text-gray-600 text-sm lg:text-base">+91 9004129180</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
-                    <div className="text-2xl">📧</div>
+                  <div className="flex items-start gap-3 lg:gap-4 p-3 lg:p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl">
+                    <div className="text-xl lg:text-2xl mt-1">📧</div>
                     <div>
-                      <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">info@arvienterprises.co.in</p>
+                      <p className="font-semibold text-gray-800 text-sm lg:text-base">Email</p>
+                      <p className="text-gray-600 text-sm lg:text-base">info@arvienterprises.co.in</p>
                     </div>
                   </div>
                 </div>
