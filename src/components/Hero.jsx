@@ -7,25 +7,19 @@ const Hero = () => {
         <div className="relative">
           {/* Left Cards */}
           <div className="absolute left-0 top-20 w-48 hidden lg:block">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-gray-100 mb-6 hover:scale-105 transition-transform">
-              <div className="bg-gradient-to-br from-amber-600 to-amber-800 p-6 h-44 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-2">🪑</div>
-                  <p className="text-xs font-semibold">Custom Furniture</p>
-                </div>
-              </div>
-              <div className="p-2 bg-white">
-                <span className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded-lg text-xs font-medium">
-                  Starting $299
-                </span>
-              </div>
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden border-2 border-gray-100 mb-6 hover:scale-105 transition-transform">
+              <img 
+                src="/images/WhatsApp Image 2025-11-14 at 10.32.31 PM (1).jpeg" 
+                alt="Gate Design" 
+                className="w-full h-44 object-cover"
+              />
             </div>
-            <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-xl p-4 text-center text-white w-36 hover:scale-105 transition-transform">
-              <div className="bg-white text-green-600 px-2 py-1 rounded-lg inline-block mb-2 text-xs font-bold">
+            <div className="bg-white/80 backdrop-blur-xl rounded-xl shadow-xl p-4 text-center w-36 hover:scale-105 transition-transform">
+              <div className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-2 py-1 rounded-lg inline-block mb-2 text-xs font-bold">
                 ⭐ Premium
               </div>
-              <div className="text-2xl font-bold mb-1">Quality</div>
-              <p className="text-xs">Guaranteed</p>
+              <div className="text-2xl font-bold mb-1 text-gray-900">Quality</div>
+              <p className="text-xs text-gray-600">Guaranteed</p>
             </div>
           </div>
 
@@ -47,21 +41,20 @@ const Hero = () => {
 
           {/* Right Cards */}
           <div className="absolute right-0 top-8 w-52 hidden lg:block">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-100 relative mb-6 w-44 ml-auto hover:scale-105 transition-transform">
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden border-2 border-blue-100 relative mb-6 w-44 ml-auto hover:scale-105 transition-transform">
               <div className="absolute top-2 right-2 bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs font-bold z-10">
-                ✨ 3D Design
+                ✨ Custom Furniture
               </div>
               <div className="p-6 h-40 flex items-center justify-center bg-gradient-to-br from-blue-100 to-pink-100">
-                <div className="text-6xl">🛋️</div>
+                <div className="text-6xl">🪑</div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-orange-100 relative hover:scale-105 transition-transform">
-              <div className="bg-gradient-to-br from-orange-400 to-red-500 p-6 h-48 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-2">🔨</div>
-                  <p className="text-sm font-bold">Expert Craftsman</p>
-                </div>
-              </div>
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden border-2 border-orange-100 relative hover:scale-105 transition-transform">
+              <img 
+                src="/images/WhatsApp Image 2025-11-14 at 10.32.27 PM (2).jpeg" 
+                alt="Expert Craftsman Work" 
+                className="w-full h-48 object-cover"
+              />
             </div>
           </div>
         </div>
