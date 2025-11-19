@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import InfiniteSlider from '../components/InfiniteSlider'
 import InteriorForm from '../components/InteriorForm'
 import OurServices from '../components/OurServices'
+import FAQ from '../components/FAQ'
 import HowWeWork from '../components/HowWeWork'
 import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
@@ -67,6 +68,7 @@ const HomePage = () => {
       </section>
       <InfiniteSlider />
       <OurServices />
+      <FAQ />
       <HowWeWork />
       <Footer />
     </div>

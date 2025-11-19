@@ -7,18 +7,18 @@ const OurServices = () => {
   const [loading, setLoading] = useState(false)
 
   const services = [
-    { name: 'Modular Kitchen', icon: '🏠' },
-    { name: 'Wardrobes', icon: '🚪' },
-    { name: 'False Ceiling', icon: '💡' },
-    { name: 'Crockery Unit', icon: '📚' },
-    { name: 'TV Unit', icon: '📺' },
-    { name: 'Painting', icon: '🎨' },
-    { name: 'Study Table', icon: '📝' },
-    { name: 'Furniture & More', icon: '🛋️' },
-    { name: 'Exterior', icon: '🏗️' },
-    { name: 'Electrical', icon: '⚡' },
-    { name: 'Water Proofing', icon: '💧' },
-    { name: 'Renovation', icon: '🔨' }
+    { name: 'Modular Kitchen', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm0 4h18v14H3V7zm2 2v10h14V9H5zm2 2h10v2H7v-2zm0 4h10v2H7v-2z"/></svg> },
+    { name: 'Wardrobes', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M6 2h12v20H6V2zm2 2v16h3V4H8zm5 0v16h3V4h-3z"/></svg> },
+    { name: 'False Ceiling', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l10 5v6h-2V8.5L12 4.5 4 8.5V13H2V7l10-5zm0 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-7 4h14v2H5v-2zm0 4h14v2H5v-2z"/></svg> },
+    { name: 'Crockery Unit', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2z"/></svg> },
+    { name: 'TV Unit', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2H7v2h10v-2h-1v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg> },
+    { name: 'Painting', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"/></svg> },
+    { name: 'Study Table', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11h2v3h2v-3h12v3h2v-3h2V8c0-1.1-.9-2-2-2zM9 4h6v2H9V4zm11 13H4V8h3v2h2V8h6v2h2V8h3v9z"/></svg> },
+    { name: 'Furniture & More', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V7H1v10h22V7h-4zm-6 7l2.5-3.21 1.79 2.15 2.5-3.22L23 13H13z"/></svg> },
+    { name: 'Exterior', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm0 2.84L18 11v9h-2v-6h-8v6H6v-9l6-5.16z"/></svg> },
+    { name: 'Electrical', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg> },
+    { name: 'Water Proofing', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg> },
+    { name: 'Renovation', icon: <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M13.783 15.172l2.121-2.121 5.996 5.996-2.121 2.121zM17.5 10c1.93 0 3.5-1.57 3.5-3.5 0-.58-.16-1.12-.41-1.6l-2.7 2.7-1.49-1.49 2.7-2.7c-.48-.25-1.02-.41-1.6-.41C15.57 3 14 4.57 14 6.5c0 .41.08.8.21 1.16l-1.85 1.85-1.78-1.78.71-.71-1.41-1.41L12 3.49c-1.17-1.17-3.07-1.17-4.24 0L4.22 7.03l1.41 1.41H2.81l-.71.71 3.54 3.54.71-.71V9.15l1.41 1.41.71-.71 1.78 1.78-7.41 7.41 2.12 2.12L16.34 9.79c.36.13.75.21 1.16.21z"/></svg> }
   ]
 
   const handleServiceClick = (serviceName) => {
@@ -69,7 +69,7 @@ const OurServices = () => {
               onClick={() => handleServiceClick(service.name)}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:scale-105 flex flex-col items-center gap-4"
             >
-              <div className="text-6xl">{service.icon}</div>
+              <div className="text-gray-700">{service.icon}</div>
               <h3 className="text-lg font-semibold text-gray-900 text-center">{service.name}</h3>
             </div>
           ))}
