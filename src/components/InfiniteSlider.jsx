@@ -1,11 +1,6 @@
-import { useRef, useState, useEffect } from 'react'
+
 
 const InfiniteSlider = () => {
-  const sliderRef = useRef(null)
-  const [isDragging, setIsDragging] = useState(false)
-  const [startX, setStartX] = useState(0)
-  const [scrollLeft, setScrollLeft] = useState(0)
-
   const features = [
     { 
       icon: <svg className="w-16 h-16 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/></svg>,
@@ -25,36 +20,11 @@ const InfiniteSlider = () => {
     }
   ]
 
-  const handleMouseDown = (e) => {
-    setIsDragging(true)
-    setStartX(e.pageX - sliderRef.current.offsetLeft)
-    setScrollLeft(sliderRef.current.scrollLeft)
-  }
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return
-    e.preventDefault()
-    const x = e.pageX - sliderRef.current.offsetLeft
-    const walk = (x - startX) * 2
-    sliderRef.current.scrollLeft = scrollLeft - walk
-  }
-
-  const handleMouseUp = () => {
-    setIsDragging(false)
-  }
-
   return (
-    <div className="w-full overflow-hidden bg-white py-4 border-y border-gray-200">
-      <div 
-        ref={sliderRef}
-        className={`flex overflow-x-auto scrollbar-hide cursor-grab ${isDragging ? 'cursor-grabbing' : ''} ${!isDragging ? 'animate-scroll' : ''}`}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-      >
-        {[...features, ...features, ...features].map((feature, index) => (
-          <div key={index} className="flex flex-col items-center gap-2 min-w-[50vw] md:min-w-[25vw] whitespace-nowrap select-none">
+    <div className="w-full overflow-hidden bg-white py-4">
+      <div className="flex animate-scroll">
+        {[...features, ...features, ...features, ...features].map((feature, index) => (
+          <div key={index} className="flex flex-col items-center gap-2 min-w-[50vw] md:min-w-[25vw] whitespace-nowrap select-none flex-shrink-0">
             {feature.icon}
             <span className="text-xl font-medium text-gray-700">{feature.text}</span>
           </div>
@@ -63,17 +33,10 @@ const InfiniteSlider = () => {
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.333%); }
+          100% { transform: translateX(-50%); }
         }
         .animate-scroll {
-          animation: scroll 10s linear infinite;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
+          animation: scroll 20s linear infinite;
         }
       `}</style>
     </div>
