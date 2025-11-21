@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/public/images/logo.png" alt="Logo" className="h-16 w-16 object-contain" />
+            <img src="/images/logo.png" alt="Logo" className="h-16 w-16 object-contain" />
             <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
               Arvi Enterprises
             </span>
